@@ -11,6 +11,8 @@
 
         public string Phone { get; set; }
 
+        public string TwitterID { get; set; }
+
         public string Email { get; set; }
     }
 }

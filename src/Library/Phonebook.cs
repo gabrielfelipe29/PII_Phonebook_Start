@@ -4,7 +4,7 @@ namespace Library
 {
     public class Phonebook
     {
-        private List<Contact> persons;
+        public List<Contact> persons;
 
         public Phonebook(Contact owner)
         {
@@ -30,6 +30,14 @@ namespace Library
             }
 
             return result;
+        }
+        public void Send(IMessageChannel messageChannel, Message message)
+        {
+
+            //creo que tengo que crear los objetos IMessageChannel y Message acá
+
+            messageChannel.Send(message);
+
         }
     }
 }
