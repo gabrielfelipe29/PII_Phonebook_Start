@@ -33,8 +33,9 @@ namespace Library
         }
         public void Send(IMessageChannel messageChannel, Message message)
         {
-
-            //creo que tengo que crear los objetos IMessageChannel y Message acá
+            
+            // creo que tengo que crear los objetos IMessageChannel y Message acá, pero no se como hacer para
+            // que cumpla con creator
 
             messageChannel.Send(message);
 
